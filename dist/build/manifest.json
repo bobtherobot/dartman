@@ -1,0 +1,24 @@
+{
+  "name": "Dartman",
+  "short_name": "Dartman",
+  "description": "A simple cricket and 301 scorekeeper.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "location": "us",
+  "icons": [],
+  "background_color": "black",
+  "theme_color": "black",
+  "dir": "auto",
+  "lang": "en",
+  "screenshots": "",
+  "categories": "",
+  "scope": ".",
+  "service_worker": {
+    "src": "pwa.js",
+    "use_cache": false
+  },
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "version": "0.0.126"
+}

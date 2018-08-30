@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Simple Cricket and 301 score boards</title>
+	<meta name="Keywords" content="darts, cricket, 301, score, board, scorekeeping, scoreboard, keeping, 501, 701">
+	<meta name="Description" content="Simple Cricket and 301 score boards.">
+
+
+	
+	<!-- PWA -->
+
+
+	<!-- dartman - dev -->
+	<link href="fonts/dartman/dartman.css" rel="stylesheet" type="text/css">
+	<link href="css/app.css" rel="stylesheet" type="text/css">
+	<link href="css/301.css" rel="stylesheet" type="text/css">
+	<link href="css/cricket.css" rel="stylesheet" type="text/css">
+
+	<script src="src/navigo.min.js"></script>
+	<script src="src/301.js"></script>
+	<script src="src/cricket.js"></script>
+	<script src="src/storeset.js"></script>
+	<script src="src/app.js"></script>
+
+	<!-- dartman - prod -->
+	<link href="dartman.css" rel="stylesheet" type="text/css">
+	<script src="dartman.js"></script>
+
+</head>
+
+<body>
+
+
+	<div id="main">
+		
+		<div id="home" class="page">
+			<h1>Dart Man</h1>
+			<p>Simple Cricket and 301 dart game score boards.</p>
+			<div id="chooseCricket" class="home-choose-game">Cricket</div>
+			<div id="choose301" class="home-choose-game">301</div>
+			<div id="chooseHelp" class="home-choose-game">?</div>
+		</div>
+
+		<div class="nav">
+			<ul>
+				<li><a href="#home">h</a></li>
+				<li><a href="#" id="resetGame">r</a></li>
+				<!--<li><a href="#" id="showHelp">?</a></li>-->
+			</ul>
+		</div>
+
+		<div id="cricket" class="page">
+			
+			<div class="row namesRow">
+				<input id="p1_name" type="text" class="names" value="A"><!-- 
+				no whitespace  --><input id="p2_name" type="text" class="names" value="B">
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_20"></div>
+				<div class="cell numb">20</div>
+				<div class="cell mark" id="p2_20"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_19"></div>
+				<div class="cell numb">19</div>
+				<div class="cell mark" id="p2_19"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_18"></div>
+				<div class="cell numb">18</div>
+				<div class="cell mark" id="p2_18"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_17"></div>
+				<div class="cell numb">17</div>
+				<div class="cell mark" id="p2_17"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_16"></div>
+				<div class="cell numb">16</div>
+				<div class="cell mark" id="p2_16"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_15"></div>
+				<div class="cell numb">15</div>
+				<div class="cell mark" id="p2_15"></div>
+			</div>
+			<div class="row">
+				<div class="cell mark" id="p1_25"></div>
+				<div class="cell numb">B</div>
+				<div class="cell mark" id="p2_25"></div>
+			</div>
+
+			<div class="row">
+				<div class="cell score" id="player1score">0</div>
+				<div class="cell score">
+					<div id="toggleMathButton" class="toggleMathButton adding"></div>
+				</div>
+				<div class="cell score" id="player2score">0</div>
+			</div>
+
+		</div>
+
+
+		<div id="ohone" class="page">
+
+			<div class="controls">
+
+				<div class="nameWrapper">
+					<input type="text" id="p1_name" class="playerName" value="Player 1" placeholder="Player 1" title="Edit Me" />
+				</div>
+
+				
+					<div class="nameWrapper">
+						<input type="text" id="p2_name" class="playerName" value="Player 2" placeholder="Player 2" title="Edit Me" />
+					</div>
+
+				<div class="control">
+					<div id="toggleMode" class="mathToggler" title="Toggle between add and subtract mode. When in subtract mode, the working score will go down based on the number button clicked.">+</div>
+				</div>
+				<div class="control">
+					<input type="text" id="ohOneSize" class="gameType" value="301"  title="Edit Me">
+				</div>
+				<!-- <div class="control">
+					<div id="setGame" class="button"">Set Game</div>
+				</div> -->
+			</div>
+
+
+			<!-- LEFT -->
+			<div class="ohLeft">
+
+
+				<div id="p1" class="player">
+
+					
+					
+					<div id="p1_score" class="score">301</div>
+					<div class="workingWrapper">
+						<div id="flopper" title="Move to other side.">f</div>
+						<div id="p1_cancelScore" class="button cancelScore" title="Cancel">x</div>
+						<div id="p1_working" class="working">25</div>
+						<div id="p1_ok" class="okButton" title="Commit the score.">d</div>
+					</div>
+
+					<div id="p1_stack" class="stack">
+						<span>15</span>
+						<span>34</span>
+						<span>150</span>
+						<span>108</span>
+						<span>150</span>
+						<span>23</span>
+						<span>56</span>
+					</div>
+
+					<div class="editWrapper">
+						<div id="p1_minusStack" class="mathToggler minus" title="Remove last score.">-</div>
+					</div>
+
+				</div>
+
+				<div id="p2" class="player">
+
+					<div id="p2_score" class="score">301</div>
+					<div class="workingWrapper">
+						<div id="p2_cancelScore" class="button cancelScore" title="Cancel">x</div>
+						<div id="p2_working" class="working">25</div>
+						<div id="p2_ok" class="okButton" title="Commit the score.">d</span></div>
+					</div>
+
+					<div id="p2_stack" class="stack">
+						<span>15</span>
+						<span>34</span>
+						<span>150</span>
+						<span>108</span>
+						<span>150</span>
+						<span>23</span>
+						<span>56</span>
+					</div>
+
+					<div class="editWrapper">
+						<div id="p2_minusStack" class="mathToggler minus" title="Remove last score.">-</div>
+					</div>
+
+				</div>
+
+
+			</div>
+
+			<!-- RIGHT
+			<div class="ohRight"> -->
+
+				
+
+				<!-- numbers - remove alll whitespace for proper rendering without freakish margins 
+				<div id="numbWrap">-->
+					<div id="n1" class="numb">1</div><div id="n2" class="numb">2</div><div id="n3" class="numb">3</div><div id="n4" class="numb">4</div><div id="n5" class="numb">5</div><div id="n6" class="numb">6</div><div id="n7" class="numb">7</div><div id="n8" class="numb">8</div><div id="n9" class="numb">9</div><div id="n10" class="numb">10</div><div id="n11" class="numb">11</div><div id="n12" class="numb">12</div><div id="n13" class="numb">13</div><div id="n14" class="numb">14</div><div id="n15" class="numb">15</div><div id="n16" class="numb">16</div><div id="n17" class="numb">17</div><div id="n18" class="numb">18</div><div id="n19" class="numb">19</div><div id="n20" class="numb">20</div><div id="n25" class="numb">B</div>
+				<!--</div>
+			 </div> -->
+
+		</div>
+
+
+		<!-- Help -->
+		<div id="help" class="page">
+
+			<div class="helpZone">
+				
+				<h1>Cricket</h1>
+			
+				<p>To mark a score on the Cricket board, click the empty area for that number. Points are tallied below each users name. Only the person who closes the number first will accrue points until another person closes that number.</p>
+				
+				<p>The green bar above each player's name indicates who is currently shooting. </p>
+				
+				<p>The green &quot;+&quot; button at the bottom indicates that scores and marks are being added . Clicking this button will switch the mode to subtraction, allowing you to remove marks or reduce the points scored.</p>
+				
+
+				<h1>301, 501, 701 (or any other &quot;01&quot; game)</h1>
+				
+				<p>To set up a different game other than 301, click on the &quot;301&quot; number and change the number to your preference. </p>
+				
+				<p>Each time a number is scored it changes color to indicate a single (bronze), double (silver) or triple (gold). If more than 5 marks are scored, the color will remain gold, and the additional points will be added to the &quot;current score&quot; section. To correct a mistake while scoring marks, click the green &quot;+&quot; button, then click the number button to remove a mark. </p>
+				
+				<p>When you're done tallying the score, click the &quot;OK&quot; button to subtract the &quot;current score&quot; from 301. Each set is stored below the &quot;OK&quot; button. Use the red minus buttons to remove the last score that was added. </p>
+			
+
+			</div>
+			
+
+		</div>
+
+
+	</div><!-- close main -->
+
+
+
+
+	
+
+
+
+
+
+
+
+	<footer>
+		<div class="copyright"><a href="http://www.gieson.com">&copy; Copyright Mike Gieson</a></div>
+	</footer>
+
+	
+	
+
+	<!-- Common  -->
+	<script src="/Library/scripts/common.js" type="text/javascript"></script> 
+	
+</body>
+
+</html>

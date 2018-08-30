@@ -1,0 +1,14 @@
+
+.icon-add:before { content: '\2b'; } /* '+' */
+.icon-minus:before { content: '\2d'; } /* '-' */
+.icon-one-back:before { content: '\31'; } /* '1' */
+.icon-two:before { content: '\32'; } /* '2' */
+.icon-three:before { content: '\33'; } /* '3' */
+.icon-one-fwd:before { content: '\34'; } /* '4' */
+.icon-three-in-one:before { content: '\35'; } /* '5' */
+.icon-help:before { content: '\3f'; } /* '?' */
+.icon-fat-arrow-down:before { content: '\64'; } /* 'd' */
+.icon-flop:before { content: '\66'; } /* 'f' */
+.icon-home:before { content: '\68'; } /* 'h' */
+.icon-reset:before { content: '\72'; } /* 'r' */
+.icon-close:before { content: '\78'; } /* 'x' */

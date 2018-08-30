@@ -1,0 +1,25 @@
+{
+  "name": "dartman",
+  "version": "1.0.0",
+  "description": "A simple javascript cricket and 301 score board.",
+  "main": "_build.js",
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "gulp": "^4.0.0",
+    "sharp": "^0.20.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobtherobot/dartman.git"
+  },
+  "author": "Michael Gieson <mgieson@plaino.com> (http://www.gieson.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobtherobot/dartman/issues"
+  },
+  "homepage": "https://github.com/bobtherobot/dartman#readme"
+}

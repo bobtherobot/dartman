@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+	<title>301 score keeper @gieson.com</title>
+	<meta name="Keywords" content="darts, 301, score, board, scorekeeping, scoreboard, keeping, 501, 701, keeper">
+	<meta name="Description" content="Simple 301 score keeper.">
+
+	<!-- dartman -->
+	<link href="fonts/dartman/dartman.css" rel="stylesheet" type="text/css">
+	<link href="css/app.css" rel="stylesheet" type="text/css">
+	<link href="css/301.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+	<div class="nav">
+		<ul>
+			<li><a href="index.html">h</a></li>
+			<li><a href="#" id="resetGame">r</a></li>
+			<!--<li><a href="#" id="showHelp">?</a></li>-->
+		</ul>
+	</div>
+
+	<!-- <div id="main"> -->
+
+
+	<div id="ohWrap">
+
+		<div class="controls">
+
+			<div class="nameWrapper">
+				<input type="text" id="p1_name" class="playerName" value="Player 1" placeholder="Player 1" title="Edit Me" />
+			</div>
+
+			
+				<div class="nameWrapper">
+					<input type="text" id="p2_name" class="playerName" value="Player 2" placeholder="Player 2" title="Edit Me" />
+				</div>
+
+			<div class="control">
+				<div id="toggleMode" class="mathToggler" title="Toggle between add and subtract mode. When in subtract mode, the working score will go down based on the number button clicked.">+</div>
+			</div>
+			<div class="control">
+				<input type="text" id="ohOneSize" class="gameType" value="301"  title="Edit Me">
+			</div>
+			<!-- <div class="control">
+				<div id="setGame" class="button"">Set Game</div>
+			</div> -->
+		</div>
+
+
+		<!-- LEFT -->
+		<div class="ohLeft">
+
+
+			<div id="p1" class="player">
+
+				
+				
+				<div id="p1_score" class="score">301</div>
+				<div class="workingWrapper">
+					<div id="flopper" title="Move to other side.">f</div>
+					<div id="p1_cancelScore" class="button cancelScore" title="Cancel">x</div>
+					<div id="p1_working" class="working">25</div>
+					<div id="p1_ok" class="okButton" title="Commit the score.">d</div>
+				</div>
+
+				<div id="p1_stack" class="stack">
+					<span>15</span>
+					<span>34</span>
+					<span>150</span>
+					<span>108</span>
+					<span>150</span>
+					<span>23</span>
+					<span>56</span>
+				</div>
+
+				<div class="editWrapper">
+					<div id="p1_minusStack" class="mathToggler minus" title="Remove last score.">-</div>
+				</div>
+
+			</div>
+
+			<div id="p2" class="player">
+
+				<div id="p2_score" class="score">301</div>
+				<div class="workingWrapper">
+					<div id="p2_cancelScore" class="button cancelScore" title="Cancel">x</div>
+					<div id="p2_working" class="working">25</div>
+					<div id="p2_ok" class="okButton" title="Commit the score.">d</span></div>
+				</div>
+
+				<div id="p2_stack" class="stack">
+					<span>15</span>
+					<span>34</span>
+					<span>150</span>
+					<span>108</span>
+					<span>150</span>
+					<span>23</span>
+					<span>56</span>
+				</div>
+
+				<div class="editWrapper">
+					<div id="p2_minusStack" class="mathToggler minus" title="Remove last score.">-</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!-- RIGHT
+		<div class="ohRight"> -->
+
+			
+
+			<!-- numbers - remove alll whitespace for proper rendering without freakish margins 
+			<div id="numbWrap">-->
+				<div id="n1" class="numb">1</div><div id="n2" class="numb">2</div><div id="n3" class="numb">3</div><div id="n4" class="numb">4</div><div id="n5" class="numb">5</div><div id="n6" class="numb">6</div><div id="n7" class="numb">7</div><div id="n8" class="numb">8</div><div id="n9" class="numb">9</div><div id="n10" class="numb">10</div><div id="n11" class="numb">11</div><div id="n12" class="numb">12</div><div id="n13" class="numb">13</div><div id="n14" class="numb">14</div><div id="n15" class="numb">15</div><div id="n16" class="numb">16</div><div id="n17" class="numb">17</div><div id="n18" class="numb">18</div><div id="n19" class="numb">19</div><div id="n20" class="numb">20</div><div id="n25" class="numb">B</div>
+			<!--</div>
+		 </div> -->
+
+	</div>
+
+
+	<footer>
+		<div class="copyright"><a href="http://www.gieson.com">&copy; Copyright Mike Gieson</a></div>
+	</footer>
+
+	<!-- Dartman -->
+	<script src="dartman.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", ohone.init);
+	</script>
+
+</body>
+
+</html>

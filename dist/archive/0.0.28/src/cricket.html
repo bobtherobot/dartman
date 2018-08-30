@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+	<title>Cricket score keeper @gieson.com</title>
+	<meta name="Keywords" content="darts, cricket, score, board, scorekeeping, scoreboard, keeping">
+	<meta name="Description" content="Simple cricket score board.">
+
+	<!-- dartman -->
+	<link href="fonts/dartman/dartman.css" rel="stylesheet" type="text/css">
+	<link href="css/app.css" rel="stylesheet" type="text/css">
+	<link href="css/cricket.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="index.html">h</a></li>
+			<li><a href="#" id="resetGame">r</a></li>
+			<!--<li><a href="#" id="showHelp">?</a></li>-->
+		</ul>
+	</div>
+
+	<div id="main">
+
+		<div class="row namesRow">
+			<input id="p1_name" type="text" class="names" value="A">
+			<input id="p2_name" type="text" class="names" value="B">
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_20"></div>
+			<div class="cell numb">20</div>
+			<div class="cell mark" id="p2_20"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_19"></div>
+			<div class="cell numb">19</div>
+			<div class="cell mark" id="p2_19"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_18"></div>
+			<div class="cell numb">18</div>
+			<div class="cell mark" id="p2_18"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_17"></div>
+			<div class="cell numb">17</div>
+			<div class="cell mark" id="p2_17"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_16"></div>
+			<div class="cell numb">16</div>
+			<div class="cell mark" id="p2_16"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_15"></div>
+			<div class="cell numb">15</div>
+			<div class="cell mark" id="p2_15"></div>
+		</div>
+		<div class="row">
+			<div class="cell mark" id="p1_25"></div>
+			<div class="cell numb">B</div>
+			<div class="cell mark" id="p2_25"></div>
+		</div>
+
+		<div class="row">
+			<div class="cell score" id="player1score">0</div>
+			<div class="cell score">
+				<div id="toggleMathButton" class="toggleMathButton adding"></div>
+			</div>
+			<div class="cell score" id="player2score">0</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="copyright"><a href="http://www.gieson.com">&copy; Copyright Mike Gieson</a></div>
+	</footer>
+
+
+	<!-- Dartman -->
+	<script src="dartman.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", cricket.init);
+	</script>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+
+
+@mark-color : #FFFFFF;
+@mark-size : 5vh;
+@cell-height : 10vh;
+@cell-width : 10vh;
+@chart-width : @cell-width * 3.5;
+@toggle-size : @cell-height * 0.5;
+@names-height : 10vh;
+
+.row {
+	position : relative;
+	width: @chart-width;
+	height: @cell-height;
+	z-index: 1;
+	border-bottom: 3px solid #2C2C2C;
+	text-align : center;
+	margin: auto;
+	&:last-child {
+		border-bottom : none;
+	}
+}
+
+.cell, .names {
+	position: relative;
+	display : inline-block;
+	margin : 0;
+	padding : 0;
+	width: @cell-width;
+	height: @cell-height;
+    line-height : @cell-height;
+	vertical-align : middle;
+	//border : 1px solid #FF0000;
+
+	&.numb {
+		font-size: @cell-height * 0.8;
+		font-weight: bold;
+		color: #999;
+	}
+
+	&.mark {
+		font-size: @cell-height * 0.8;
+		font-family : Dartman;
+		color : #FFFFFF;
+		&:active {
+			background-color: #333;
+		}
+
+	}
+
+}
+
+.namesRow {
+	border-bottom: 3px solid #555555;
+	white-space: nowrap;
+	height: 32px;
+	margin-top : 10px;
+	.names {
+		overflow : hidden;
+		font-size: 24px;
+		height: 32px;
+		line-height: 32px;
+		margin : 0;
+		padding : 0;
+		border: 0px none #000000;
+		background-color: #000000;
+		height: @names-height;
+		width: 49%;
+	}
+
+}
+
+
+#p1_name {
+	text-align : left; // left
+}
+
+#p2_name {
+	text-align : right; // left
+}
+
+
+.score, .names {
+	font-size: @names-height * 0.9;
+	font-weight: bold;
+	color: #FFCC00;
+}
+
+
+
+
+.toggleMathButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size : @toggle-size;
+    line-height : @toggle-size;
+    width: @toggle-size;
+    height: @toggle-size;
+    margin-left: -@toggle-size/2; /* half the width */
+    margin-top: -@toggle-size/2; /* half the height */
+	text-align : center;
+	border-radius : 4px;
+	color : #000000;
+
+	&.adding {
+		background-color : #157500;
+		&:before {
+			content: "+";
+		}
+	}
+
+	&.minusing {
+		background-color : #BD0003;
+		&:before {
+			content: "-";
+		}
+	}
+
+}
+
+

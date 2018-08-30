@@ -1,3 +1,7 @@
+dist/
+_build.js
+iconfont-source/
+
 # Logs
 logs
 *.log
