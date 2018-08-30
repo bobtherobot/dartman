@@ -1,6 +1,7 @@
 dist/
 _build.js
 iconfont-source/
+.DS_Store
 
 # Logs
 logs
